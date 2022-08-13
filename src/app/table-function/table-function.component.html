@@ -1,0 +1,19 @@
+<div class="container">
+  <h1>Part-3 Table Functions Using Angular</h1>
+  <table class="table" cellpadding="0" cellspacing="0">
+    <thead>
+      <tr>
+        <th (click)="sort('name')" id="product">Product Name <i class="fa fa-sort-desc" aria-hidden="true"></i></th>
+        <th (click)="sort('price')">Price <i class="fa fa-sort-desc" aria-hidden="true"></i></th>
+        <th (click)="sort('category')">Category <i class="fa fa-sort-desc" aria-hidden="true"></i></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of data">
+        <td>{{item.name}}</td>
+        <td>{{item.price}}</td>
+        <td>{{item.category}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
